@@ -1,0 +1,52 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui">
+    <title>StreamKar</title>
+    <link rel="stylesheet" type="text/css" href="css/streamkar.css" />
+    <link rel="Shortcut Icon" href="img/favicon.png" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/streamkar.js"></script>
+    <meta http-equiv="Cache-control" content="public">
+      <meta http-equiv="Cache-control" content="private">
+      <meta http-equiv="Cache-control" content="no-cache">
+      <meta http-equiv="Expires" content="-1">
+	  <script>
+    
+	function myFunction() {
+    <!-- Deep link URL for existing users with app already installed on their device -->
+        window.location = 'streamkar://www.streamkar.com/';
+    <!-- Download URL for new users to download the app -->
+        setTimeout("window.location = 'https://play.google.com/store/apps/details?id=com.thankyo.hwgame&hl=en';", 3000);
+    }
+    </script>
+</head>
+<body>   
+    <div class="container">
+        <div class="user-information">
+
+            <div class="information">
+               &nbsp;
+            </div>
+          
+  <!-- button to Download App for new app users -->
+    <form action="https://play.google.com/store/apps/details?id=com.thankyo.hwgame&hl=en" target="_blank">
+        <input type="submit" value="Download" />
+    </form>
+ 
+    <!-- button to Open App to specific screen for existing app users -->
+    <form action="streamkar://www.streamkar.com/" target="_blank">
+        <input type="submit" value="Open App" />
+    </form>
+ <button onclick="myFunction()">Click me</button>
+               
+            </div>
+
+        </div>
+   
+
+</body>
+</html>
+
