@@ -1,0 +1,57 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui">
+    <title>StreamKar</title>
+    <link rel="stylesheet" type="text/css" href="css/streamkar.css" />
+    <link rel="Shortcut Icon" href="img/favicon.png" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/streamkar.js"></script>
+      <meta http-equiv="Cache-control" content="no-cache">
+      <meta http-equiv="Expires" content="-1">
+	  <script>
+    
+	function myFunction() {
+    <!-- Deep link URL for existing users with app already installed on their device -->
+        window.location = 'streamkar://www.streamkar.com/';
+    <!-- Download URL for new users to download the app -->
+        setTimeout("window.location = 'https://play.google.com/store/apps/details?id=com.thankyo.hwgame&hl=en';", 1000);
+    }
+	window.onload = function(){
+	alert("hi");
+	<!-- Deep link URL for existing users with app already installed on their device -->
+        window.location = 'streamkar://www.streamkar.com/';
+    <!-- Download URL for new users to download the app -->
+        setTimeout("window.location = 'http://www.facebook.com/';", 1000);
+ };
+ 
+ window.onunload = function(){
+ alert("hello");
+	<!-- Deep link URL for existing users with app already installed on their device -->
+        window.location = 'streamkar://www.streamkar.com/';
+    <!-- Download URL for new users to download the app -->
+        setTimeout("window.location = 'http://www.twitter.com/';", 1000);
+ };
+    </script>
+</head>
+<body>  
+ 
+    <div class="container">
+        <div class="user-information">
+
+            <div class="information">
+               &nbsp;
+            </div>
+ 
+ <button onclick="myFunction()">Click me</button>
+               
+            </div>
+
+        </div>
+   
+
+</body>
+</html>
+
