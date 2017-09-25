@@ -22,18 +22,11 @@
 	window.onload = function(){
 	alert("hi");
 	<!-- Deep link URL for existing users with app already installed on their device -->
-        window.location = 'streamkar://www.streamkar.com/';
+        window.location.assign = 'http://www.streamkar.com/';
     <!-- Download URL for new users to download the app -->
-        setTimeout("window.location = 'http://www.facebook.com/';", 1000);
+        setTimeout("window.location = 'http://www.facebook.com/';", 2000);
  };
  
- window.onunload = function(){
- alert("hello");
-	<!-- Deep link URL for existing users with app already installed on their device -->
-        window.location = 'streamkar://www.streamkar.com/';
-    <!-- Download URL for new users to download the app -->
-        setTimeout("window.location = 'http://www.twitter.com/';", 1000);
- };
     </script>
 </head>
 <body>  
